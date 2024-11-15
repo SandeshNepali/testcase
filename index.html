@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editorial Development Plan</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f7f8fa;
+        margin: 0;
+      }
+
+      .container {
+        width: 400px;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #333;
+      }
+
+      .header p {
+        margin: 4px 0 20px;
+        font-size: 0.9em;
+        color: #666;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 40px;
+        border-left: 2px solid #ddd;
+      }
+
+      .timeline-step {
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .timeline-step:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline-step:before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+      }
+
+      .timeline-step.active:before {
+        background-color: #4caf50;
+      }
+
+      .timeline-step.complete:before {
+        background-color: #ffeb3b;
+      }
+
+      .step-content {
+        margin-left: 10px;
+      }
+
+      .step-title {
+        font-weight: bold;
+        font-size: 0.95em;
+        color: #333;
+      }
+
+      .step-date {
+        font-size: 0.8em;
+        color: #999;
+        margin-bottom: 6px;
+      }
+
+      .step-tasks {
+        margin: 8px 0;
+        font-size: 0.85em;
+        color: #666;
+      }
+
+      .view-button {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 6px 12px;
+        font-size: 0.85em;
+        color: #4caf50;
+        border: 1px solid #4caf50;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .view-button:hover {
+        background-color: #4caf50;
+        color: #ffffff;
+      }
+
+      .final-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #e0f7df;
+        color: #4caf50;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .final-button:hover {
+        background-color: #4caf50;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Editorial Development Plan</h1>
+        <p>January 2025 – Project Name</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-step active">
+          <div class="step-content">
+            <div class="step-title">
+              Select Topics, Titles & Client Feedback
+            </div>
+            <div class="step-date">
+              Nov 28th <span style="color: #999">Started</span>
+            </div>
+            <div class="step-tasks">• Selected Topics Draft</div>
+            <a href="#" class="view-button">View</a>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step complete">
+          <div class="step-content">
+            <div class="step-title">Draft Outline</div>
+            <div class="step-date">
+              Dec 1st <span style="color: #999">Before 5th</span>
+            </div>
+            <div class="step-tasks">
+              • Social Media Ideas and topics <br />
+              • Blog Ideas and topics
+            </div>
+            <a href="#" class="view-button">View</a>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="step-content">
+            <div class="step-title">Full Draft</div>
+            <div class="step-date">
+              Dec 6th <span style="color: #999">Before 10th</span>
+            </div>
+            <div class="step-tasks">
+              • Social Version <br />
+              • Blog Version
+            </div>
+            <a href="#" class="view-button">View</a>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step">
+          <div class="step-content">
+            <div class="step-title">Final Version</div>
+            <div class="step-date">
+              Dec 11th <span style="color: #999">Before 15th</span>
+            </div>
+            <div class="step-tasks">
+              • Social Full Version <br />
+              • Blog Full Version
+            </div>
+            <a href="#" class="view-button">View</a>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-step">
+          <div class="step-content">
+            <div class="step-title">View Editorial Calendar</div>
+            <div class="step-date">Dec 15th</div>
+            <a href="#" class="final-button">View Editorial Calendar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
